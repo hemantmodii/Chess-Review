@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <p><a href="#"><img class="logo" src="Assets/logo.png" alt="Chess Anarchy"></a></p>
+      <p><a href="#">Home</a></p>
+      <p><a href="#">About</a></p>
+      <p><a href="#">Analysis</a></p>
+      <p><a href="#">Puzzles</a></p>
+    </nav>
+  </header>
+  <div class="board">
+    <div class="row" id="h">
+      <p>h&nbsp</p>
+      <div class="black" id="1"><img src="Assets/Chess_rdt45.svg" alt="Rook"></div>
+      <div class="white" id="2"><img src="Assets/Chess_ndt45.svg" alt="Knight"></div>
+      <div class="black" id="3"><img src="Assets/Chess_bdt45.svg" alt="Bishop"></div>
+      <div class="white" id="4"><img src="Assets/Chess_qdt45.svg" a lt="Queen"></div>
+      <div class="black" id="5"><img src="Assets/Chess_kdt45.svg" alt="King"></div>
+      <div class="white" id="6"><img src="Assets/Chess_bdt45.svg" alt="Bishop"></div>
+      <div class="black" id="7"><img src="Assets/Chess_ndt45.svg" alt="Knight"></div>
+      <div class="white" id="8"><img src="Assets/Chess_rdt45.svg" alt="Rook"></div>
+    </div>
+    <div class="row" id="g">
+      <p>g&nbsp</p>
+      <div class="white" id="1"><img src="Assets/Chess_pdt45.svg" alt="Pawn"></div>
+      <div class="black" id="2"><img src="Assets/Chess_pdt45.svg" alt="Pawn"></div>
+      <div class="white" id="3"><img src="Assets/Chess_pdt45.svg" alt="Pawn"></div>
+      <div class="black" id="4"><img src="Assets/Chess_pdt45.svg" alt="Pawn"></div>
+      <div class="white" id="5"><img src="Assets/Chess_pdt45.svg" alt="Pawn"></div>
+      <div class="black" id="6"><img src="Assets/Chess_pdt45.svg" alt="Pawn"></div>
+      <div class="white" id="7"><img src="Assets/Chess_pdt45.svg" alt="Pawn"></div>
+      <div class="black" id="8"><img src="Assets/Chess_pdt45.svg" alt="Pawn"></div>
+    </div>
+    <div class="row" id="f">
+      <p>f&nbsp</p>
+      <div class="black" id="1"></div>
+      <div class="white" id="2"></div>
+      <div class="black" id="3"></div>
+      <div class="white" id="4"></div>
+      <div class="black" id="5"></div>
+      <div class="white" id="6"></div>
+      <div class="black" id="7"></div>
+      <div class="white" id="8"></div>
+    </div>
+    <div class="row" id="e">
+      <p>e&nbsp</p>
+      <div class="white" id="1"></div>
+      <div class="black" id="2"></div>
+      <div class="white" id="3"></div>
+      <div class="black" id="4"></div>
+      <div class="white" id="5"></div>
+      <div class="black" id="6"></div>
+      <div class="white" id="7"></div>
+      <div class="black" id="8"></div>
+    </div>
+    <div class="row" id="d">
+      <p>d&nbsp</p>
+      <div class="black" id="1"></div>
+      <div class="white" id="2"></div>
+      <div class="black" id="3"></div>
+      <div class="white" id="4"></div>
+      <div class="black" id="5"></div>
+      <div class="white" id="6"></div>
+      <div class="black" id="7"></div>
+      <div class="white" id="8"></div>
+    </div>
+    <div class="row" id="c">
+      <p>c&nbsp</p>
+      <div class="white" id="1"></div>
+      <div class="black" id="2"></div>
+      <div class="white" id="3"></div>
+      <div class="black" id="4"></div>
+      <div class="white" id="5"></div>
+      <div class="black" id="6"></div>
+      <div class="white" id="7"></div>
+      <div class="black" id="8"></div>
+    </div>
+    <div class="row" id="b">
+      <p>b&nbsp</p>
+      <div class="black" id="1"><img src="Assets/Chess_plt45.svg" alt="Pawn"></div>
+      <div class="white" id="2"><img src="Assets/Chess_plt45.svg" alt="Pawn"></div>
+      <div class="black" id="3"><img src="Assets/Chess_plt45.svg" alt="Pawn"></div>
+      <div class="white" id="4"><img src="Assets/Chess_plt45.svg" alt="Pawn"></div>
+      <div class="black" id="5"><img src="Assets/Chess_plt45.svg" alt="Pawn"></div>
+      <div class="white" id="6"><img src="Assets/Chess_plt45.svg" alt="Pawn"></div>
+      <div class="black" id="7"><img src="Assets/Chess_plt45.svg" alt="Pawn"></div>
+      <div class="white" id="8"><img src="Assets/Chess_plt45.svg" alt="Pawn"></div>
+    </div>
+    <div class="row" id="a">
+      <p>a&nbsp</p>
+      <div class="white" id="1"><img src="Assets/Chess_rlt45.svg" alt="Rook"></div>
+      <div class="black" id="2"><img src="Assets/Chess_nlt45.svg" alt="Knight"></div>
+      <div class="white" id="3"><img src="Assets/Chess_blt45.svg" alt="Bishop"></div>
+      <div class="black" id="4"><img src="Assets/Chess_qlt45.svg" a lt="Queen"></div>
+      <div class="white" id="5"><img src="Assets/Chess_klt45.svg" alt="King"></div>
+      <div class="black" id="6"><img src="Assets/Chess_blt45.svg" alt="Bishop"></div>
+      <div class="white" id="7"><img src="Assets/Chess_nlt45.svg" alt="Knight"></div>
+      <div class="black" id="8"><img src="Assets/Chess_rlt45.svg" alt="Rook"></div>
+    </div>
+    <div class="numbers">
+      <div class="blank">1</div>
+      <div class="blank">2</div>
+      <div class="blank">3</div>
+      <div class="blank">4</div>
+      <div class="blank">5</div>
+      <div class="blank">6</div>
+      <div class="blank">7</div>
+      <div class="blank">8</div>
+    </div>
+  </div>
+  <div class="gameReview">
+    <div class="players">
+
+      <div class="player1">
+        <p>
+        <h2>White</h2>
+        </p>
+        <div class="accuracy">92.8%</div>
+      </div>
+      <div class="player2">
+        <p>
+        <h2>Black</h2>
+        </p>
+        <div class="accuracy">84.5%</div>
+      </div>
+    </div>
+    <div class="moves">
+      <div class="player-one">
+        <p class="brilliant">0</p>
+        <p class="great">1</p>
+        <p class="best">4</p>
+        <p class="excellent">6</p>
+        <p class="good">2</p>
+        <p class="book">2</p>
+        <p class="inaccuracy">0</p>
+        <p class="mistake">0</p>
+        <p class="miss">0</p>
+        <p class="blunder">2</p>
+      </div>
+      <div class="move-types">
+        <div class="brilliant">
+
+          <p class="brilliant">Brilliant</p>
+        </div>
+        <div class="great">
+
+          <p class="great">Great</p>
+        </div>
+        <div class="best">
+
+          <p class="best">Best</p>
+        </div>
+        <div class="excellent">
+
+          <p class="excellent">Excellent</p>
+        </div>
+        <div class="good">
+
+          <p class="good">Good</p>
+        </div>
+        <div class="book">
+
+          <p class=" book">Book</p>
+        </div>
+        <div class="inaccuracy">
+
+          <p class="inaccuracy">Inaccuracy</p>
+        </div>
+        <div class="mistake">
+
+          <p class="mistake">Mistake</p>
+        </div>
+        <div class="miss">
+
+          <p class="miss">Miss</p>
+        </div>
+        <div class="blunder">
+
+          <p class="blunder">Blunder</p>
+        </div>
+      </div>
+      <div class="player-two">
+        <p class="brilliant">0</p>
+        <p class="great">2</p>
+        <p class="best">3</p>
+        <p class="excellent">7</p>
+        <p class="good">2</p>
+        <p class="book">1</p>
+        <p class="inaccuracy">1</p>
+        <p class="mistake">0</p>
+        <p class="miss">0</p>
+        <p class="blunder">1</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
