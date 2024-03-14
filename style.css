@@ -127,11 +127,11 @@ a:hover .logo {
   margin-bottom: 200px;
 }
 
-/* @media (max-width: 950px) {
+@media (max-width: 950px) {
   .gameReview {
     width: 80%;
   }
-} */
+}
 
 .players {
   margin: 15px;
