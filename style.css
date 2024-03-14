@@ -1,0 +1,190 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-image:url(bg.png);
+  background-size: cover;
+
+}
+
+p, h1, h2{
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+header{
+  position:relative;
+}
+
+.navbar {
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-inline: 30px; */
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 100%;
+  color: black;
+  height: 70px;
+  font-size: 1.2rem;
+}
+
+.logo {
+  height: 70px;
+}
+
+.board {
+  /* position:fixed; */
+  margin-top: 30px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.black{
+  background-color: rgba(1, 120, 13, 0.8);
+  height: 50px;
+  width: 50px;
+  /* border: 2px solid; */
+}
+
+.white{
+  background-color: rgba(255, 237, 192, 0.8);
+  height: 50px;
+  width: 50px;
+}
+
+.blank {
+  height: 50px;
+  width: 50px;
+  color: white;
+  background: none;
+}
+
+.numbers{
+  margin-top: 18px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+.players {
+  margin-top: 5px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+
+}
+
+.accuracy {
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 170px;
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 8px;
+  border: 4px solid rgb(148, 184, 148);
+}
+
+a:hover {
+  font-size: 1.4rem;
+  transition: 0.3s ease-in-out;
+  color: green;
+}
+
+a:hover .logo {
+  height: 75px;
+}
+
+.gameReview {
+  margin: auto;
+  background: rgba(46, 46, 46, 0.8);
+  width: 35%;
+  padding: 30px;
+  border: 2px black solid ;
+  filter: drop-shadow(2px 2px 5px black);
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 200px;
+}
+
+@media (max-width: 950px) {
+  .gameReview {
+    width: 80%;
+  }
+}
+
+.players {
+  margin: 15px;
+  padding: 10px;
+}
+
+.moves {
+  display: flex;
+  justify-content: center;
+  padding-inline: 40px;
+  align-items: center;
+  /* margin-bottom: 200px; */
+}
+.player-one, .move-types {
+  margin-right: 60px;
+}
+
+.brilliant {
+  color: cyan;
+}
+
+.great {
+  color: rgb(57, 57, 196);
+}
+
+.best {
+  color: rgb(44, 161, 56);
+}
+
+.excellent {
+  color: rgb(44, 161, 56);
+}
+
+.good {
+  color: rgb(108, 204, 60);
+}
+
+.book {
+  color: rgb(175, 109, 23);
+}
+
+.inaccuracy {
+  color: rgb(197, 204, 60);
+}
+
+.mistake {
+  color: rgb(204, 144, 60);
+}
+
+.miss {
+  color: rgb(204, 60, 134);
+}
+
+.blunder {
+  color: red;
+}
