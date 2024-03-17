@@ -93,7 +93,7 @@ header{
   cursor: grab, auto;
 }
 
-.highlight-square
+.highlight
 {
   width: 10px;
   height: 10px;
@@ -102,6 +102,10 @@ header{
   margin-top: 30px;
   border-radius: 40px;
   background-color: rgba(38, 38, 38, 0.25);
+}
+
+.selfhighlight {
+  background-color: yellow;
 }
 
 @media(max-width: 1200px)

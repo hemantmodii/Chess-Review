@@ -1,5 +1,6 @@
 import { globalState } from "../index.js";
 
+
 function Greet() {
   alert("Hello, World");
 }
