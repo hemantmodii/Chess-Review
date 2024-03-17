@@ -31,9 +31,16 @@ function renderHighlight(squareId)
 }
 
 //clear all highlights if clicked on non-highlighted
-function removeHighlight()
+function clearHighlight()
 {
-  
+  globalState.forEach((row) => {
+    row.forEach((element) => {
+      if(element.id == highlight)
+      {
+        element.highlight = true;
+      }
+    });
+  });
 }
 
 // use when you want to render board for first time when game start
@@ -114,4 +121,4 @@ function initGameRender(data) {
 
 
 
-export { initGameRender, renderHighlight };
+export { initGameRender, renderHighlight, clearHighlight };
