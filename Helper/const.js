@@ -1,3 +1,5 @@
 const ROOT_DIV = document.getElementById("root");
 
-export { ROOT_DIV};
+let highlight_state = false;
+
+export { ROOT_DIV, highlight_state};

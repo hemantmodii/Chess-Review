@@ -33,6 +33,24 @@ header{
   height: 70px;
 }
 
+.main-page {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.review-table {
+  height: 560px;
+  width: 600px;
+  background-color: rgba(30, 56, 5, 0.803);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-table span {
+  color: white;
+}
+
 #board {
   display: flex;
   flex-direction: column;
@@ -42,20 +60,20 @@ header{
 
 .squareRow {
   display: flex;
-  justify-content: center;
 }
 
 .square {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 .white {
-  background-color: #c9f39f;
+  background-color: rgba(201, 243, 159, 0.8);
+
 }
 
 .black {
-  background-color: #769656;
+  background-color: rgba(118, 150, 86, 0.8);
 }
 
 .piece:active {
@@ -77,3 +95,4 @@ header{
   /* border-radius: 40px; */
   background-color: rgba(38, 38, 38, 0.25);
 }
+

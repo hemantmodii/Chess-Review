@@ -2,6 +2,8 @@ import { ROOT_DIV } from "../Helper/const.js";
 import { globalState } from "../index.js";
 import { renderHighlight } from "../Render/main.js";
 
+import { highlight_state } from "../Helper/const.js";
+
 
 function whitePawnClick({piece})
 {
@@ -26,6 +28,7 @@ function whitePawnClick({piece})
           });
         });
 
+        if(highlight)
         renderHighlight(highlight);
       
     });

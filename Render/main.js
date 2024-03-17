@@ -30,6 +30,12 @@ function renderHighlight(squareId)
   document.getElementById(squareId).appendChild(highlightSpan);
 }
 
+//clear all highlights if clicked on non-highlighted
+function removeHighlight()
+{
+  
+}
+
 // use when you want to render board for first time when game start
 function initGameRender(data) {
   data.forEach((element) => {
