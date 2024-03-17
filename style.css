@@ -115,27 +115,91 @@ a:hover .logo {
   height: 75px;
 }
 
-.gameReview {
+.analysis {
   margin: auto;
-  background: rgba(46, 46, 46, 0.8);
+  background: rgb(46, 46, 46);
   width: 35%;
-  padding: 30px;
+  padding-inline: 30px;
   border: 2px black solid ;
-  filter: drop-shadow(2px 2px 5px black);
+  /* filter: drop-shadow(2px 2px 5px black); */
   text-align: center;
   border-radius: 8px;
   margin-bottom: 200px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 950px) {
-  .gameReview {
+  .analysis {
     width: 80%;
   }
 }
 
-.players {
+@media (max-width: 500px) {
+  body {
+    opacity: 0;
+  }
+}
+
+.analysis-header-text {
+  /* font-weight: 700; */
+  font-size: 2rem;
+}
+
+.analysis-header-logo{
+  filter: invert(1);
+  height: 19px;
+}
+
+.board-element-container {
+  max-width: 100%;;
+}
+
+.board-element-item {
+  width: 24%;
+  height: 70px;
+  background: rgb(46, 46, 46);
+  border: none;
+  margin: 0;
+  display:inline-block;
+}
+
+.board-item-logo {
+  filter: invert(1);
+  display: inline-block;
+}
+
+.board-item-label {
+  color: white;
+  font-size: 1.3rem;
+}
+
+
+.game-review-view {
   margin: 15px;
-  padding: 10px;
+  font-size: large;
+}
+
+.review-view-text
+{
+  font-size: 3rem;
+  color: white;
+}
+
+.accuracy-component {
+  display: flex;
+  
+}
+
+.accuracy-score-component {
+  background-color: white;
+}
+
+.accuracy-score-text {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  width: 60px;
+  height: 60px;
+  
 }
 
 .moves {
@@ -150,15 +214,15 @@ a:hover .logo {
 }
 
 .brilliant {
-  color: cyan;
+  color: #109888;
 }
 
 .great {
-  color: rgb(57, 57, 196);
+  color: #486688;
 }
 
 .best {
-  color: rgb(44, 161, 56);
+  color: #5d9948;
 }
 
 .excellent {
@@ -166,25 +230,25 @@ a:hover .logo {
 }
 
 .good {
-  color: rgb(108, 204, 60);
+  color: #95b776;
 }
 
 .book {
-  color: rgb(175, 109, 23);
+  color: #88694b;
 }
 
 .inaccuracy {
-  color: rgb(197, 204, 60);
+  color: #e3aa24;
 }
 
 .mistake {
-  color: rgb(204, 144, 60);
+  color: #dd7c2c;
 }
 
 .miss {
-  color: rgb(204, 60, 134);
+  color: #ff7769;
 }
 
 .blunder {
-  color: red;
+  color: #e02828;
 }
